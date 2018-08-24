@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #000000;
+}
+
+
+/* Header/Blog Title */ 
+.header {
+    padding: 15px;
+    text-align: center; 
+	background: yellow;
+	border-style: solid;
+    border-color: green;
+}
+
+
+.header h1 {
+    font-size: 75px;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #f82525;
+	border-style: solid;
+    border-color: blue;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: center;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #f46302;
+    color: orange;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+	border-style: solid;
+    border-color: yellow;
+}
+
+/* Right column */
+.rightcolumn { 
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+	border-style: solid;
+    border-color: green;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: blue;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #1d821a;
+    margin-top: 20px;
+	border-style: solid;
+    border-color: red;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+
+
+<div id="grad1"</div>
+</head>
+<body>
+
+<div class="header">
+  <h1>90s Baby</h1>
+  <p>Relive your childhood</p>
+</div>
+
+<div class="topnav">
+  <a href="#">https://www.imdb.com/title/tt0096694/</a> 
+  </div>
+  <button class="btn">This is a link to IMDb</button>
+<div class="topnav">
+  <a href="#">https://www.imdb.com/title/tt0115231/</a>
+  </div>
+  <button class="btn">This is a link to IMDb</button>
+  <a href="#">Link</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TV Time</h2>
+      <h5>Lets discuss some of those shows you used to watch before school eating a bowl of cereal! , Aug 22, 2018</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>I bet you notice some of these shows</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>90s Music Sis</h2>
+      <h5>You rememeber those old-school bops? Aug 22, 2018</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Just think back to those times your mom was singing all these artist's songs to you</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
